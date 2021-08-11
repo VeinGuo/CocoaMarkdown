@@ -13,6 +13,8 @@
 #import <MobileCoreServices/MobileCoreServices.h> // For UTType...
 #endif
 
+NSNotificationName const kCMImageTextAttachmentNeedsLayoutNotification = @"kCMImageTextAttachmentNeedsLayoutNotification";
+
 @interface CMImageTextAttachment ()
 {
     NSTextContainer* __weak _textContainer;
@@ -189,6 +191,9 @@ static NSImage* _placeholderImage;
             [_textContainer.layoutManager setNeedsDisplayForAttachment:self];
         }
     }
+    [NSNotificationCenter.defaultCenter postNotificationName:kCMImageTextAttachmentNeedsLayoutNotification
+                                                      object:self
+                                                    userInfo:nil];
 }
 
 @end
