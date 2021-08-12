@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name          = 'CocoaMarkdown'
+  s.name          = 'UIDCocoaMarkdown'
   s.version       = '1.1'
   s.summary       = 'Markdown parsing and rendering for iOS and OS X'
   s.description   = "CocoaMarkdown aims to solve two primary problems better than existing libraries:
@@ -14,14 +14,14 @@ Efficient NSAttributedString creation for easy rendering on iOS and OS X. Most e
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
 
-  s.source        = { :git => 'https://github.com/VeinGuo/CocoaMarkdown.git' }
+  s.source        = { :git => 'https://github.com/VeinGuo/CocoaMarkdown.git', :tag => "#{s.version}" }
   s.source_files  = 'CocoaMarkdown'
   s.private_header_files = 'CocoaMarkdown/*_Private.h'
   s.ios.framework = 'UIKit'
   s.osx.framework = 'Cocoa'
   s.requires_arc  = true
 
-  s.dependency 'cmark', '~> 0.24.0'
+  s.dependency 'UIDCmark', '~> 0.30.1'
   s.dependency 'Ono', '~> 1.1.3'
 
 end
