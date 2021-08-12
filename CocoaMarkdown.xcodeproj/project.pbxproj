@@ -597,7 +597,7 @@
 			isa = PBXGroup;
 			children = (
 				725115F71A69733400337419 /* External */,
-				729F53DC1A68641400CC7448 /* CocoaMarkdown */,
+				729F53DC1A68641400CC7448 /* UIDCocoaMarkdown */,
 				729F53E91A68641400CC7448 /* CocoaMarkdownTests */,
 				72FE7ECA1A68692400F23F46 /* Example-iOS */,
 				72FE7EF51A68695100F23F46 /* Example-Mac */,
@@ -620,7 +620,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		729F53DC1A68641400CC7448 /* CocoaMarkdown */ = {
+		729F53DC1A68641400CC7448 /* UIDCocoaMarkdown */ = {
 			isa = PBXGroup;
 			children = (
 				729F53DF1A68641400CC7448 /* CocoaMarkdown.h */,
@@ -631,7 +631,7 @@
 				729F53DD1A68641400CC7448 /* Supporting Files */,
 				725116061A6973B200337419 /* Frameworks */,
 			);
-			path = CocoaMarkdown;
+			path = UIDCocoaMarkdown;
 			sourceTree = "<group>";
 		};
 		729F53DD1A68641400CC7448 /* Supporting Files */ = {
@@ -1051,6 +1051,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
