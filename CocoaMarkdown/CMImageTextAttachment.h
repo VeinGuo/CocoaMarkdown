@@ -15,6 +15,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+extern NSNotificationName const kCMImageTextAttachmentNeedsLayoutNotification;
+
 @interface CMImageTextAttachment : NSTextAttachment
 
 - (instancetype) initWithImageURL:(NSURL*)imageURL;
