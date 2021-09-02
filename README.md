@@ -3,6 +3,11 @@
 
 CocoaMarkdown is a cross-platform framework for parsing and rendering Markdown, built on top of the [C reference implementation](https://github.com/jgm/CommonMark) of [CommonMark](http://commonmark.org).
 
+[CommonMark](http://commonmark.org) relies on cmake to compile.
+```
+$ brew install cmake
+```
+
 ### Why?
 
 CocoaMarkdown aims to solve two primary problems better than existing libraries:
